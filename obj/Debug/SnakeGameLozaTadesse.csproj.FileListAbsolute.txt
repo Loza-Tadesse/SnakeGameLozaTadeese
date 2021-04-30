@@ -1,0 +1,11 @@
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\bin\Debug\SnakeGameLozaTadesse.exe.config
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\bin\Debug\SnakeGameLozaTadesse.exe
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\bin\Debug\SnakeGameLozaTadesse.pdb
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.csprojAssemblyReference.cache
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.Properties.Resources.resources
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.csproj.GenerateResource.cache
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.csproj.CoreCompileInputs.cache
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.exe
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.pdb
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.GameForm.resources
+C:\Users\DSU\source\repos\SnakeGameLozaTadesse\obj\Debug\SnakeGameLozaTadesse.ScoreBoard.resources

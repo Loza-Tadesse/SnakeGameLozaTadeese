@@ -27,8 +27,8 @@ namespace SnakeGameLozaTadesse
             SnakeParts = new List<SnakePart>()
             {
                 new SnakePart("SnakeHead", startPosition),
-                new SnakePart("SnakePart", new Point(startPosition.X - 1, startPosition.Y)), //one tile left of head
-                new SnakePart("SnakePart", new Point(startPosition.X - 2, startPosition.Y)), //two tiles left of head
+                new SnakePart("SnakePart", new Point(startPosition.X - 1, startPosition.Y)), 
+                new SnakePart("SnakePart", new Point(startPosition.X - 2, startPosition.Y)), 
             };
             moveCoordinate = new Point(0, 0);
         }
@@ -37,7 +37,7 @@ namespace SnakeGameLozaTadesse
         public List<SnakePart> SnakeParts;
         int BoardSizeX;
         int BoardSizeY;
-        Point moveCoordinate; //the coordinate to move the head by
+        Point moveCoordinate; 
         public int Direction;
         int ProposedDirection = -1;
 
@@ -53,9 +53,7 @@ namespace SnakeGameLozaTadesse
         {
             if (ProposedDirection != Direction)
             {
-                //IF newDirection isn't the same as Direction
-                //THEN IF newDirection isn't the opposite of Direction
-                //THEN update the changeCoordinate
+                
                 bool change = false;
 
                 if (ProposedDirection == 1 && Direction != 2) { moveCoordinate = new Point(-1, 0); change = true; }

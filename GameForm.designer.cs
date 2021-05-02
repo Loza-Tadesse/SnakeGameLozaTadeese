@@ -72,8 +72,8 @@
             this.aboutTSMI.BackColor = System.Drawing.Color.White;
             this.aboutTSMI.Font = new System.Drawing.Font("Segoe UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.aboutTSMI.Name = "aboutTSMI";
-            this.aboutTSMI.Size = new System.Drawing.Size(58, 43);
-            this.aboutTSMI.Text = "Score";
+            this.aboutTSMI.Size = new System.Drawing.Size(61, 43);
+            this.aboutTSMI.Text = "Home";
             this.aboutTSMI.Click += new System.EventHandler(this.aboutTSMI_Click);
             // 
             // toolStripMenuItem1
@@ -108,7 +108,6 @@
             this.timeTSMI.Name = "timeTSMI";
             this.timeTSMI.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.timeTSMI.Size = new System.Drawing.Size(263, 28);
-            this.timeTSMI.Text = "Time Survived: 0 seconds";
             this.timeTSMI.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.timeTSMI.ToolTipText = "The time you have survived in this game.";
             // 

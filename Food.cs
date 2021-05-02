@@ -29,6 +29,5 @@ namespace SnakeGameLozaTadesse
 
         public int Id { get => Location; }
         public int Snack { get => Apples; }
-      //  public int Life { get => Life_real; }
     }
 }

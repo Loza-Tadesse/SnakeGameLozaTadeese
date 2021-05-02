@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 /*
-    
+  controls most activites done in the game form the score to the snake motion and the apple placement.   
  */
 namespace SnakeGameLozaTadesse
 {
@@ -43,7 +43,6 @@ namespace SnakeGameLozaTadesse
             Board = new ushort[BoardSizeX, BoardSizeY];
             drawArea = new DrawArea(ref gamePanel);
             random = new Random();
-            TickCountMax = 1000 / TickSpeed;
             Walls = new List<Wall>();
         }
         
@@ -61,7 +60,7 @@ namespace SnakeGameLozaTadesse
 
         //Actual game stuff
         public int CurrentScore = 0;
-        int TimeSurvived = 0;
+       // int TimeSurvived = 0;
         ushort[,] Board;
         DrawArea drawArea;
         Player player;
@@ -70,9 +69,7 @@ namespace SnakeGameLozaTadesse
 
         //Tick and time counting
         const int TickSpeed = 100; //Time (ms) between ticks
-        int TickCountMax;
-        int TickCountI = 0;
-        string TimeSurvivedFormatted = "";
+       
      
         public void New() //restart with creating new setting for new game
         {
@@ -82,7 +79,7 @@ namespace SnakeGameLozaTadesse
             drawArea.Clear();
 
             CurrentScore = 0;
-            TimeSurvived = 0;
+          //  TimeSurvived = 0;
 
 
             scoreTSMI.Text = String.Format("Score: {0}", CurrentScore);
@@ -104,29 +101,6 @@ namespace SnakeGameLozaTadesse
         
         private void UpdateTimeSurvived()
         {
-            TickCountI++;
-            if (TickCountI == TickCountMax)
-            {
-                TickCountI = 0;
-                TimeSurvived++;
-            }
-
-            int minutes = TimeSurvived / 60;
-            int seconds = TimeSurvived % 60;
-
-            if (minutes > 1)
-            { //2 minutes minimum
-                TimeSurvivedFormatted = String.Format("{0} minutes, {1} seconds", minutes, seconds);
-            }
-            
-            else if (minutes > 0)
-            { //1 minute
-                TimeSurvivedFormatted = String.Format("{0} minute, {1} seconds", minutes, seconds);
-            }
-            else
-            { //less than 1 minute
-                TimeSurvivedFormatted = String.Format("{0} seconds", seconds);
-            }
             
         }
        
@@ -160,9 +134,7 @@ namespace SnakeGameLozaTadesse
                     drawArea.DrawSquare(snakePart.Position, snakePart.Name);
                 }
 
-                //update time
-              //  UpdateTimeSurvived();
-              //  timeTSMI.Text = String.Format("Time Survived: {0}", TimeSurvivedFormatted);
+                
             }
         }
         
@@ -212,9 +184,7 @@ namespace SnakeGameLozaTadesse
 
             drawArea.DrawFood(CurrentFood);
 
-            //set up timer
-           // foodTimer.Interval = CurrentFood.Life;
-           // foodTimer.Start();
+            
         }
 
         private void MakeWalls()
